@@ -1,0 +1,20 @@
+Steps to install:
+1. make sure to backup your schemes. to backup, open regedit, navigate to HKEY_CURRENT_USER\AppEvents\Schemes. right click on schemes and click export. save to your desired location.
+2. there are 2 registry files.
+    one named original is the one which you get after you upgrade windows 7 to windows 10.
+    other named modified/windows sound schemes is modified by me upto some extent like adding notification sound for toast notifications, which dont have reference originally.
+3. just run the registry file according to your needs. if you feel this file is unsafe because its registry file, you may check line by line or get it from other windows 10 device which is upgraded from windows 7 and no refresh has been made.
+
+the schemes in modified registry are
+Afternoon, Calligraphy, Characters, Cityscape, Delta, Festival, Garden, Heritage, Landscape, quirky, Raga Savanna, Sonata, windows 7 default, windows 8.1 default, original sounds(my custom sound, hope you like it :) ). 
+
+for all sound schemes in one file here is the link: fav.me/db3q9ri
+
+paste the folders in c:/windows/media
+
+if you find windows change theme annoying, just delete the file.
+
+***UPDATE***
+WINDOWS 7 default is now windows 7, windows 8.1 default is now windows 8 and original sound is removed (I'm lazy to create it after refresh of my pc)
+registry now has clean and proper references unlike previous which was messy. NOw the names directly come from referenced dll file so no issues with different system languages.
+It also has reference of windows vista ultimate extra sounds but wont show up in schemes. Let me know if you are interested in these schemes. If you really want it then just head to registry editor. go to HKEY_CURRENT_USER/AppEvents/Schemes/Names. There you will find the glass, tinker and pearl. inside that node the reference is to @winsoundschemes.exe -1. change it to respective scheme name. Done.Wink/Razz Wink/Razz 

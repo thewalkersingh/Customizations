@@ -1,0 +1,2 @@
+1. Copy Longhorn folder to C:\Windows\Media.
+2. Run Longhorn.reg and add it to the registry to set it as the system sound scheme.
