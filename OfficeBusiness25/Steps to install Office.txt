@@ -1,0 +1,28 @@
+1) Customize Office Tool XML file Link: https://config.office.com/deploymentsettings
+a) Select any Volume Licenses version
+b) Uninstall any MSI Version... turn it: Off
+c) While Exporting select Office Open XML Formats
+d) Name ConfigurationLTSCProPlus2024Volume.xml (or any name)
+
+2) Download Office Deployment Tool: https://www.microsoft.com/en-us/download/details.aspx?id=49117
+a) Run so that it will extract files 
+b) Delete the xml and replace with above xml
+
+3) First copy whole folder to Download and then follow below
+run cmd in admin mode and type:
+setup /configure ConfigurationLTSCProPlus2024Volume.xml (or any name as exported)
+
+4) Now in cmd paste one by one
+a) cd /d %ProgramFiles%\Microsoft Office\Office16
+// skip this command
+for /f %x in ('dir /b ..\root\Licenses16\ProPlus2024VL_KMS*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses16\%x"
+
+// go to-> cd C:\Program Files\Microsoft Office\Office16
+b) cscript ospp.vbs /sethst:03K.org
+c) cscript ospp.vbs /act
+
+// don't need below commands
+cscript ospp.vbs /setprt:1688
+cscript ospp.vbs /unpkey:6F7TH >nul
+cscript ospp.vbs /inpkey:FXYTK-NJJ8C-GB6DW-3DYQT-6F7TH
+
